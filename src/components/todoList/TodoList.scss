@@ -1,0 +1,81 @@
+.add-task {
+  margin: 0 auto 50px auto;
+  display: block;
+  width: 800px;
+  height: 40px;
+  input {
+    width: 70%;
+    border-radius: 8px 0 0 8px;
+    height: 100%;
+    padding: 10px;
+    outline: none;
+    border: 1px solid #6e6e6e;
+    font-size: 16px;
+    &:active,
+    &:focus {
+      border: 1px solid #6c93ef;
+    }
+  }
+  button {
+    width: 30%;
+    border: none;
+    border-radius: 0 8px 8px 0;
+    height: 100%;
+    padding: 10px;
+    outline: none;
+    cursor: pointer;
+    background-color: #5882ed;
+    font-size: 16px;
+    color: #fff;
+    &:hover {
+      background-color: #6c93ef;
+    }
+  }
+}
+
+.todoList {
+  .todoList-item {
+    margin: 10px 0;
+    height: 40px;
+    border: 1px solid #6e6e6e;
+    cursor: move;
+    border-radius: 6px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    overflow: hidden;
+    &__buttons {
+      height: 100%;
+      display: flex;
+      align-items: center;
+      button {
+        height: 100%;
+        border: none;
+        padding: 0 15px;
+        font-size: 14px;
+        cursor: pointer;
+      }
+      .edit {
+        background-color: #5882ed;
+        &:hover {
+          background-color: #6c93ef;
+        }
+      }
+      .delete {
+        background-color: #7a0000;
+        &:hover {
+          background-color: #700000;
+        }
+      }
+    }
+    span {
+      padding: 0 10px;
+      font-size: 16px;
+    }
+  }
+  &__empty {
+    font-size: 24px;
+    font-weight: bold;
+    padding: 20px 0;
+  }
+}
